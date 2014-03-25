@@ -16,7 +16,7 @@
  */
  
 #include "StepperModel.h"
-#include "WProgram.h"
+#include "Arduino.h"
 
 
 /*
@@ -36,6 +36,7 @@ StepperModel::StepperModel(int inDirPin, int inStepPin, int inEnablePin, int inE
     
   minStepCount=minSC;
   maxStepCount=maxSC;
+  
   
   pinMode(dirPin, OUTPUT);  
   pinMode(stepPin, OUTPUT);  
